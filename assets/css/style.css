@@ -6,6 +6,7 @@ h1 {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -15,7 +16,8 @@ h2 {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #227452;
+  color: #36b37f;
+  margin-top: 0;
 }
 
 p {
@@ -83,4 +85,5 @@ p {
   align-items: center;
   text-align: center;
   list-style: none;
+  padding: 50px;
 }
