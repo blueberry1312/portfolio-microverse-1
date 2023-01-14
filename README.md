@@ -33,9 +33,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[section_welcome_mobile]** Welcome header mobile version.
+- **[section_works]** Display last works.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,9 +92,10 @@ To run the project, you need to open "index.html" file.
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[menu_mobile]** Hamburguer menu for mobile.
+- [ ] **[display_works]** Display works details.
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
