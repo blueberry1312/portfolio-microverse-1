@@ -198,17 +198,14 @@ p {
 }
 
 .topright {
-  position: absolute;
-  width: 118.87px;
-  height: 107.94px;
   transform: rotate(180);
-  top: 3960px;
-  left: 770px;
+  float: right;
+  margin-top: -50px;
 }
 
 .bottomleft {
-  position: absolute;
-  top: 4000px;
+  float: left;
+  margin-top: -385px;
 }
 
 .about-me {
@@ -219,7 +216,7 @@ p {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  margin-top: 68px;
+  margin-left: 80px;
 }
 
 .resume-button {
@@ -234,9 +231,9 @@ p {
   text-align: center;
   justify-content: center;
   padding: 20px;
-  margin-top: 20px;
   margin-bottom: 60px;
   margin-left: 102px;
+  margin-top: -60px;
 }
 
 .categorie-title {
@@ -293,4 +290,8 @@ p {
   margin-bottom: 10px;
   text-align: center;
   align-items: center;
+}
+
+.about-myself p {
+  margin-bottom: 80px;
 }
