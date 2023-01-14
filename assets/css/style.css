@@ -2,6 +2,7 @@ body {
   background-color: #fff;
   width: 375px;
   height: 6800px;
+  margin: auto;
 }
 
 h1 {
@@ -89,6 +90,7 @@ p {
 
 .contact {
   margin-top: 0;
+  margin-right: 45px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -193,13 +195,13 @@ p {
   width: 118.87px;
   height: 107.94px;
   transform: rotate(180);
-  top: 3920px;
-  left: 280px;
+  top: 3930px;
+  left: 770px;
 }
 
 .bottomleft {
   position: absolute;
-  top: 3950px;
+  top: 3930px;
 }
 
 .about-me {
@@ -247,6 +249,7 @@ p {
   background: #ebf0ee;
   border-radius: 8px;
   margin-top: 20px;
+  margin-left: -18px;
 }
 
 .categorie-about-myself {
