@@ -1,24 +1,22 @@
+body {
+  background-color: #fff;
+  width: 375px;
+  height: 6800px;
+}
+
 h1 {
-  margin-top: 64px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  color: #172b4d;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  text-align: center;
-  color: #172b4d;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
-h2 {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
+span {
   color: #36b37f;
-  margin-top: 0;
 }
 
 p {
@@ -40,7 +38,7 @@ p {
   overflow: hidden;
   position: absolute;
   width: 375px;
-  height: 800px;
+  height: 680px;
   top: 62px;
 }
 
@@ -78,6 +76,7 @@ p {
   padding: 8px;
   border: 1px;
   border-radius: 32px;
+  margin-top: 40px;
 }
 
 .flex-container {
@@ -85,6 +84,7 @@ p {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: 60px;
 }
 
 .contact {
@@ -94,5 +94,96 @@ p {
   align-items: center;
   text-align: center;
   list-style: none;
-  padding: 50px;
+}
+
+.work-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-top: 700px;
+}
+
+.indicator {
+  text-align: center;
+}
+
+.card-works {
+  width: 327px;
+  height: 498px;
+  border: 1px solid #d0d9d4;
+  background: #ebf0ee;
+  border-radius: 8px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  height: 252px;
+  width: 100%;
+}
+
+.card-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3a4a42;
+  border-radius: 8px;
+  text-align: center;
+  background: #fff;
+}
+
+.card-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  text-align: center;
+  list-style: none;
+  margin: auto;
+  background: #fff;
+}
+
+.card-tags li {
+  text-align: center;
+  padding: 0.5em;
+  background: #ebf0ee;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  align-items: center;
+  margin: auto;
+}
+
+.button-project {
+  background-color: #36b37f;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 29px;
+  margin-bottom: 24px;
+  margin-left: 102px;
+}
+
+.card-background {
+  background-color: #fff;
+  border-radius: 8px;
 }
