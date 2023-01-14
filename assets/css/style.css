@@ -36,7 +36,6 @@ p {
   background-image: url("../../assets/img/background-image-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100%;
-  overflow: hidden;
   position: absolute;
   width: 375px;
   height: 680px;
@@ -78,6 +77,8 @@ p {
   border: 1px;
   border-radius: 32px;
   margin-top: 40px;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .flex-container {
