@@ -14,6 +14,7 @@ h1 {
   line-height: 52px;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: center;
 }
 
 span {
@@ -29,6 +30,37 @@ p {
   margin: 2em 24px;
   text-align: center;
   color: #172b4d;
+}
+
+button {
+  background-color: #36b37f;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  color: #fff;
+  padding: 12px;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+textarea {
+  background: #fff;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  width: 305px;
+  height: 114px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  -webkit-text-fill-color: #091e42;
+  padding: 12px;
+  margin-left: 20px;
+  margin-bottom: 24px;
 }
 
 .headline {
@@ -122,11 +154,11 @@ p {
 
 .card-works {
   width: 327px;
-  height: 498px;
+  height: 482px;
   border: 1px solid #d0d9d4;
   background: #ebf0ee;
   border-radius: 8px;
-  margin: 10px auto;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
 }
@@ -176,17 +208,6 @@ p {
 }
 
 .button-project {
-  background-color: #36b37f;
-  border-radius: 5px;
-  border: none;
-  font-weight: 500;
-  font-size: 17px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  padding: 20px;
   margin-top: 29px;
   margin-bottom: 24px;
   margin-left: 102px;
@@ -205,34 +226,18 @@ p {
 
 .bottomleft {
   float: left;
-  margin-top: -385px;
+  margin-top: -400px;
 }
 
 .about-me {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  color: #172b4d;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  margin-left: 80px;
+  margin-top: 50px;
+  margin-left: 75px;
 }
 
 .resume-button {
-  background-color: #36b37f;
-  border-radius: 5px;
-  border: none;
-  font-weight: 500;
-  font-size: 17px;
-  color: #fff;
   display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  padding: 20px;
   margin-bottom: 60px;
-  margin-left: 102px;
+  margin-left: 110px;
   margin-top: -60px;
 }
 
@@ -294,4 +299,63 @@ p {
 
 .about-myself p {
   margin-bottom: 80px;
+}
+
+.form-text {
+  margin-top: 50px;
+  width: 327px;
+  margin-left: 30px;
+  margin-bottom: 58px;
+}
+
+.input-email {
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  width: 327px;
+  height: 48px;
+  margin-bottom: 24px;
+  margin-left: 20px;
+}
+
+.input-name {
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  width: 327px;
+  height: 48px;
+  margin-bottom: 24px;
+  margin-left: 20px;
+}
+
+.full-name {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.email {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.submit-button {
+  margin-left: 130px;
 }
