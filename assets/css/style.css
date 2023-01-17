@@ -46,21 +46,12 @@ button {
   letter-spacing: 0.03em;
 }
 
-textarea {
-  background: #fff;
-  border: 1px solid #60c095;
-  border-radius: 4px;
-  width: 305px;
-  height: 114px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  -webkit-text-fill-color: #091e42;
-  padding: 12px;
-  margin-left: 20px;
-  margin-bottom: 24px;
+button:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+button:active {
+  background: #008552;
 }
 
 .headline {
@@ -299,63 +290,4 @@ textarea {
 
 .about-myself p {
   margin-bottom: 80px;
-}
-
-.form-text {
-  margin-top: 50px;
-  width: 327px;
-  margin-left: 30px;
-  margin-bottom: 58px;
-}
-
-.input-email {
-  display: flex;
-  background: #fff;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  width: 327px;
-  height: 48px;
-  margin-bottom: 24px;
-  margin-left: 20px;
-}
-
-.input-name {
-  display: flex;
-  background: #fff;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  width: 327px;
-  height: 48px;
-  margin-bottom: 24px;
-  margin-left: 20px;
-}
-
-.full-name {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #6b778c;
-  border: 0;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-}
-
-.email {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 24px;
-  color: #6b778c;
-  border: 0;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-}
-
-.submit-button {
-  margin-left: 130px;
 }
