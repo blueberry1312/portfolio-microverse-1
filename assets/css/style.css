@@ -46,23 +46,6 @@ button {
   letter-spacing: 0.03em;
 }
 
-textarea {
-  background: #fff;
-  border: 1px solid #60c095;
-  border-radius: 4px;
-  width: 305px;
-  height: 114px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  -webkit-text-fill-color: #091e42;
-  padding: 12px;
-  margin-left: 20px;
-  margin-bottom: 24px;
-}
-
 .headline {
   background-color: #fff;
   background-image: url("../../assets/img/background-image-mobile.svg");
