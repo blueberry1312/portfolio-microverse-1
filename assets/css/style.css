@@ -309,6 +309,7 @@ textarea {
 }
 
 .input-email {
+  display: flex;
   background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
@@ -319,6 +320,7 @@ textarea {
 }
 
 .input-name {
+  display: flex;
   background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
@@ -345,7 +347,7 @@ textarea {
 .email {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
   line-height: 24px;
   color: #6b778c;
