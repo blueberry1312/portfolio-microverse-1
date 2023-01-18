@@ -71,6 +71,16 @@ textarea {
   margin-bottom: 24px;
 }
 
+footer {
+  margin-top: 46px;
+  margin-left: 50px;
+}
+
+footer p {
+  margin-top: 0;
+  margin-left: -20px;
+}
+
 .headline {
   background-color: #fff;
   background-image: url("../../assets/img/background-image-mobile.svg");
