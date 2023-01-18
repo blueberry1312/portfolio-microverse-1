@@ -20,10 +20,8 @@
         <section class="headline">
             <div class="flex-container">
                 <h1 class="header-title">
-                    Hey there. I'm Néstor
-                </h1>
-                <h1>
-                    <span>I'm a software developer</span>
+                    Hey there. I'm Néstor<br>
+                    <span>I'm a software developer</span>                    
                 </h1>
                 <p>
                     I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
@@ -164,18 +162,17 @@
             </div>
         </section>
         <section class="about-myself" id="about-myself-id">
-            <img class="topright" src="assets/img/aboutme-topright.svg" alt="topright">
-            <h1 class="about-me">About me</h1>
-            <p>
-                I can help you build a product , feature or website Look through some of my work and experience! If you
-                like
-                what you see and have a project you need coded,
-                don't hestiate to contact me.
-            </p>
-            <img class="bottomleft" src="assets/img/aboutme-bottomleft.svg" alt="bottomleft">            
-            <button type="button" class="resume-button">
-                Get My Resume
-            </button>            
+            <div class="about-container">
+                <h1 class="about-me">About me</h1>
+                <p>
+                    I can help you build a product , feature or website Look through some of my work and experience! If you
+                    like
+                    what you see and have a project you need coded,
+                    don't hestiate to contact me.
+                </p>        
+                <button type="button" class="resume-button">Get My Resume
+                </button> 
+            </div>           
             <ul class="categorie-about-myself">
                 <li>
                     <article class="card-categories">
@@ -229,5 +226,32 @@
                 </li>
             </ul>
         </section>
+        <section class="form" id="form-id">
+            <h1 class="form-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
+            <form action="https://formspree.io/f/xvongony" method="POST" class="form-input">
+                <label class="input-name">
+                    <input type="text" class="full-name"name="full-name" id="full-name" maxlength="30" placeholder="Full name" required>
+                </label>
+                <label class="input-email">
+                    <input type="email" class="email" name="email" id="email" placeholder="Email address" required>
+                </label>
+                <label class="input-text">
+                    <textarea name="text_area" id="text_area" maxlength="500" placeholder="Enter text here" required></textarea>
+                </label>
+                <button type="submit" class="submit-button">Get in touch</button>
+            </form>
+        </section>
+        <footer>
+            <ul class="contact">
+                <li class="icon"><a href=""><img src="assets/contact/twitter-icon.svg" alt="twitter icon"></a></li>
+                <li class="icon"><a href=""><img src="assets/contact/linkedin-icon.svg" alt="linkedin icon"></a></li>
+                <li class="icon"><a href=""><img src="assets/contact/medium-icon.svg" alt="medium icon"></a></li>
+                <li class="icon"><a href=""><img src="assets/contact/github-icon.svg" alt="github icon"></a></li>
+                <li class="icon"><a href=""><img src="assets/contact/angellist-icon.svg" alt="angellist icon"></a></li>
+            </ul>
+            <p>
+                nestor.oro.alvarez@gmail.com
+            </p>
+        </footer>
     </body>
 </html>
