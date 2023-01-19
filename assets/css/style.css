@@ -1,9 +1,7 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  font-style: normal;
   padding: 0;
-  box-sizing: border-box;
 }
 
 h1 {
@@ -40,6 +38,10 @@ button:active {
   background: #008552;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 textarea {
   background: #fff;
   border: 1px solid #60c095;
@@ -67,9 +69,6 @@ footer {
 footer .contact {
   list-style: none;
   display: flex;
-  margin-bottom: 16px;
-  margin-right: 95px;
-  margin-left: 60px;
 }
 
 .toolbar {
@@ -77,14 +76,22 @@ footer .contact {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0 24px 0 24px;
+}
+
+.desktop-toolbar {
+  display: none;
 }
 
 .logo-placeholder {
   text-decoration: none;
   font-size: 20px;
   color: #28352f;
+}
+
+.logo-placeholder h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .headline {
@@ -102,10 +109,7 @@ footer .contact {
 }
 
 .flex-container h1 {
-  margin-top: 74px;
-  margin-left: 27px;
-  margin-right: 27px;
-  margin-bottom: 58px;
+  margin: 56px 45px 32px 45px;
 }
 
 .flex-container span {
@@ -113,9 +117,7 @@ footer .contact {
 }
 
 .flex-container p {
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 58px;
+  margin: 0 24px 34px 24px;
 }
 
 .flex-container .contact {
@@ -123,9 +125,7 @@ footer .contact {
   flex-direction: row;
   justify-content: center;
   list-style: none;
-  margin-bottom: 64px;
-  margin-right: 95px;
-  margin-left: 60px;
+  margin: 0 0 40px 0;
 }
 
 .flex-container button {
@@ -204,10 +204,7 @@ footer .contact {
 }
 
 .card-background .button-project {
-  margin-top: 29px;
-  margin-bottom: 24px;
-  margin-left: 103px;
-  margin-right: 103px;
+  margin: 29px 103px 24px 103px;
 }
 
 .about-myself {
@@ -229,14 +226,11 @@ footer .contact {
 }
 
 .about-container p {
-  margin-bottom: 24px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin: 0 24px 24px 24px;
 }
 
 .about-myself button {
-  margin-bottom: 59px;
-  margin-top: 12px;
+  margin: 36px 0 59px 0;
 }
 
 .categorie-about-myself {
@@ -300,11 +294,12 @@ footer .contact {
   justify-content: center;
   text-align: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .form .form-text {
-  margin-left: 52px;
-  margin-right: 52px;
   margin-bottom: 58px;
 }
 
@@ -313,11 +308,10 @@ footer .contact {
   background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
-  width: 100%;
   margin-bottom: 24px;
 }
 
-.full-name {
+.input-name .full-name {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -333,11 +327,10 @@ footer .contact {
   background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
-  width: 100%;
   margin-bottom: 24px;
 }
 
-.email {
+.input-email .email {
   font-weight: 500;
   font-size: 15px;
   line-height: 24px;
@@ -351,4 +344,63 @@ footer .contact {
 .form .submit-button {
   margin-top: 24px;
   margin-bottom: 44px;
+}
+
+@media only screen and (min-width: 768px) {
+  .headline {
+    background-image: url("../../assets/img/background-image-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .toolbar {
+    display: none;
+  }
+
+  .desktop-toolbar {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .desktop-toolbar li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+    margin-top: 4px;
+  }
+
+  .desktop-toolbar a:link {
+    color: #344563;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+
+  .desktop-toolbar a:hover {
+    color: #344563;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+
+  .desktop-toolbar a:visited {
+    color: #344563;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+
+  .flex-container h1 {
+    margin: 24px 160px 34px 160px;
+  }
+
+  .flex-container p {
+    margin: 12px 240px 34px 240px;
+  }
 }
