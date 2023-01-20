@@ -417,12 +417,12 @@ header {
 
   .desktop-toolbar {
     display: flex;
+    margin-bottom: 100px;
   }
 
   .desktop-toolbar__li {
     display: flex;
-    padding: 12px;
-    margin-top: 4px;
+    padding: 20px;
   }
 
   .desktop-toolbar a:link {
@@ -450,11 +450,11 @@ header {
   }
 
   .flex-container h1 {
-    margin: 24px 160px 34px 160px;
+    margin: 0 160px 24px 160px;
   }
 
   .flex-container p {
-    margin: 12px 240px 34px 240px;
+    margin: 0 180px 34px 180px;
   }
 
   .flex-container .contact {
@@ -466,13 +466,14 @@ header {
     flex-direction: row;
     justify-content: center;
     list-style: none;
-    margin: 0 0 40px 0;
+    margin: 0 0 495px 0;
   }
 
   .works {
     grid-template-columns: 327px 327px;
     grid-gap: 24px;
     width: 100%;
+    margin-bottom: 192px;
   }
 
   .about-me-container .topright {
@@ -482,10 +483,10 @@ header {
   .about-me-container .topright-desktop {
     display: block;
     justify-self: end;
-    width: 80%;
-    height: 80%;
     position: relative;
-    top: -30px;
+    top: -100px;
+    width: 85%;
+    height: 85%;
   }
 
   .about-me-background {
@@ -496,7 +497,7 @@ header {
   }
 
   .about-container p {
-    margin: 0 120px 36px 120px;
+    margin: 0 140px 36px 140px;
   }
 
   .categorie-about-myself {
@@ -506,7 +507,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-bottom: 90px;
+    margin-bottom: 160px;
   }
 
   .card-categories {
@@ -520,20 +521,15 @@ header {
     background-image: url("../../assets/img/img-footer-1.svg"), url("../../assets/img/img-footer-2.svg"), url("../../assets/img/img-footer-3.svg");
     background-position: bottom left, bottom center, bottom right;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 10%, 10%, 10%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
     flex-wrap: nowrap;
     margin: 0;
   }
 
   .form .form-text {
-    margin: 0 10px 58px 0;
+    margin: 0 24px 190px 24px;
     font-size: 25px;
-    margin-left: 24px;
   }
 
   .form .form-input {
@@ -598,27 +594,70 @@ header {
     margin: 0 220px 36px 220px;
   }
 
-  .form {
-    background-size: 20%, 20%, 20%;
-  }
-
   .form .form-text {
-    margin: 0 10px 58px 0;
     font-size: 30px;
-    margin-left: 60px;
+    margin-left: 80px;
+    margin-bottom: 150px;
   }
 
   .form .form-input {
     display: flex;
     flex-direction: column;
-    margin-right: 140px;
+    margin-right: 90px;
+  }
+
+  .desktop-toolbar {
+    margin-bottom: 176px;
+  }
+
+  .flex-container p {
+    margin: 0 280px 34px 280px;
+  }
+
+  .about-me-background {
+    background-image: url("../../assets/img/aboutme-bottomleft-desktop.svg");
+    background-position: center left;
+    background-repeat: no-repeat;
+  }
+
+  .about-me-container .topright-desktop {
+    display: block;
+    justify-self: end;
+    position: relative;
+    top: -100px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
+  textarea {
+    width: 658px;
+  }
+
   .works {
     grid-template-columns: 369px 369px 369px;
     grid-gap: 24px;
+    width: 100%;
+  }
+
+  .about-container p {
+    margin: 0 280px 36px 280px;
+  }
+
+  .form .form-text {
+    margin-left: 110px;
+  }
+
+  .form .form-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 135px;
+  }
+
+  .input-full-name .first-name {
+    width: 100%;
+  }
+
+  .input-full-name .last-name {
     width: 100%;
   }
 }
