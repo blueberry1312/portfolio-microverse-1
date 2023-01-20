@@ -1,9 +1,7 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  font-style: normal;
   padding: 0;
-  box-sizing: border-box;
 }
 
 h1 {
@@ -30,6 +28,7 @@ button {
   padding: 12px;
   gap: 10px;
   letter-spacing: 0.03em;
+  line-height: 24px;
 }
 
 button:hover {
@@ -38,6 +37,10 @@ button:hover {
 
 button:active {
   background: #008552;
+}
+
+ul {
+  padding-inline-start: 0;
 }
 
 textarea {
@@ -67,9 +70,10 @@ footer {
 footer .contact {
   list-style: none;
   display: flex;
-  margin-bottom: 16px;
-  margin-right: 95px;
-  margin-left: 60px;
+}
+
+footer .contact-desktop {
+  display: none;
 }
 
 .toolbar {
@@ -77,8 +81,11 @@ footer .contact {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0 24px 0 24px;
+}
+
+.desktop-toolbar {
+  display: none;
 }
 
 .logo-placeholder {
@@ -87,10 +94,16 @@ footer .contact {
   color: #28352f;
 }
 
-.headline {
+.logo-placeholder h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+header {
   background-image: url("../../assets/img/background-image-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position-y: 40px;
 }
 
 .flex-container {
@@ -102,10 +115,7 @@ footer .contact {
 }
 
 .flex-container h1 {
-  margin-top: 74px;
-  margin-left: 27px;
-  margin-right: 27px;
-  margin-bottom: 58px;
+  margin: 56px 45px 32px 45px;
 }
 
 .flex-container span {
@@ -113,9 +123,7 @@ footer .contact {
 }
 
 .flex-container p {
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 58px;
+  margin: 0 24px 34px 24px;
 }
 
 .flex-container .contact {
@@ -123,9 +131,11 @@ footer .contact {
   flex-direction: row;
   justify-content: center;
   list-style: none;
-  margin-bottom: 64px;
-  margin-right: 95px;
-  margin-left: 60px;
+  margin: 0 0 40px 0;
+}
+
+.flex-container .contact-desktop {
+  display: none;
 }
 
 .flex-container button {
@@ -137,6 +147,7 @@ footer .contact {
   display: grid;
   justify-content: center;
   margin-bottom: 7px;
+  grid-row-gap: 24px;
 }
 
 .work-title {
@@ -155,11 +166,9 @@ footer .contact {
   display: flex;
   flex-direction: column;
   width: 327px;
-  height: 482px;
   border: 1px solid #d0d9d4;
   background: #ebf0ee;
   border-radius: 8px;
-  margin-bottom: 24px;
 }
 
 .card-image {
@@ -204,16 +213,36 @@ footer .contact {
 }
 
 .card-background .button-project {
-  margin-top: 29px;
-  margin-bottom: 24px;
-  margin-left: 103px;
-  margin-right: 103px;
+  margin: 29px 103px 24px 103px;
 }
 
-.about-myself {
-  background-image: url("../../assets/img/aboutme-topright.svg"), url("../../assets/img/aboutme-bottomleft.svg");
-  background-position: top right, top left;
-  background-repeat: no-repeat, no-repeat;
+.about-me-background {
+  width: 100%;
+  background-image: url("../../assets/img/aboutme-bottomleft.svg");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  border-top: 20px;
+}
+
+.about-me-container {
+  display: grid;
+  grid: 'h1 .topright';
+  grid-template-columns: 20% 60% 20%;
+}
+
+.about-me-container h1 {
+  grid-column-start: 2;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-me-container .topright {
+  position: relative;
+  justify-self: end;
+}
+
+.about-me-container .topright-desktop {
+  display: none;
 }
 
 .about-container {
@@ -222,29 +251,20 @@ footer .contact {
   align-items: center;
   text-align: center;
   justify-content: center;
-}
-
-.about-container h1 {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .about-container p {
-  margin-bottom: 24px;
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
-.about-myself button {
-  margin-bottom: 59px;
-  margin-top: 12px;
+  margin: 0 24px 36px 24px;
 }
 
 .categorie-about-myself {
   list-style: none;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin-bottom: 60px;
-  margin-right: 38px;
 }
 
 .categorie-about-myself .categorie-title {
@@ -300,12 +320,18 @@ footer .contact {
   justify-content: center;
   text-align: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 225px;
 }
 
 .form .form-text {
-  margin-left: 52px;
-  margin-right: 52px;
   margin-bottom: 58px;
+}
+
+.input-full-name {
+  display: none;
 }
 
 .form .input-name {
@@ -313,11 +339,10 @@ footer .contact {
   background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
-  width: 100%;
   margin-bottom: 24px;
 }
 
-.full-name {
+.input-name .full-name {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -333,11 +358,10 @@ footer .contact {
   background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
-  width: 100%;
   margin-bottom: 24px;
 }
 
-.email {
+.input-email .email {
   font-weight: 500;
   font-size: 15px;
   line-height: 24px;
@@ -350,5 +374,288 @@ footer .contact {
 
 .form .submit-button {
   margin-top: 24px;
-  margin-bottom: 44px;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    background-image: url("../../assets/img/background-image-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 26px;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  footer .contact {
+    display: none;
+  }
+
+  footer .contact-desktop {
+    list-style: none;
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo-placeholder {
+    display: none;
+  }
+
+  .desktop-toolbar {
+    display: flex;
+    margin-bottom: 100px;
+  }
+
+  .desktop-toolbar__li {
+    display: flex;
+    padding: 20px;
+  }
+
+  .desktop-toolbar a:link {
+    color: #344563;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+
+  .desktop-toolbar a:hover {
+    color: #344563;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+
+  .desktop-toolbar a:visited {
+    color: #344563;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+
+  .flex-container h1 {
+    margin: 0 160px 24px 160px;
+  }
+
+  .flex-container p {
+    margin: 0 180px 34px 180px;
+  }
+
+  .flex-container .contact {
+    display: none;
+  }
+
+  .flex-container .contact-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin: 0 0 495px 0;
+  }
+
+  .works {
+    grid-template-columns: 327px 327px;
+    grid-gap: 24px;
+    width: 100%;
+    margin-bottom: 192px;
+  }
+
+  .about-me-container .topright {
+    display: none;
+  }
+
+  .about-me-container .topright-desktop {
+    display: block;
+    justify-self: end;
+    position: relative;
+    top: -100px;
+    width: 85%;
+    height: 85%;
+  }
+
+  .about-me-background {
+    background-image: url("../../assets/img/aboutme-bottomleft-desktop.svg");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 15%;
+  }
+
+  .about-container p {
+    margin: 0 140px 36px 140px;
+  }
+
+  .categorie-about-myself {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 160px;
+  }
+
+  .card-categories {
+    width: 369px;
+    height: 352px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .form {
+    background: url("../../assets/img/img-footer-1.svg") no-repeat 0% 95%, url("../../assets/img/img-footer-2.svg") no-repeat 20% 85%, url("../../assets/img/img-footer-3.svg") no-repeat 100% 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding-bottom: 220px;
+  }
+
+  .form .form-text {
+    margin: 0 24px 190px 24px;
+    font-size: 25px;
+  }
+
+  .form .form-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+  }
+
+  .form .input-name {
+    display: none;
+  }
+
+  .form .input-full-name {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 24px;
+  }
+
+  .input-full-name .first-name {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6b778c;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin: 0 12px 0 0;
+    border: 1px solid #d0d9d4;
+  }
+
+  .input-full-name .last-name {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6b778c;
+    border: 1px solid #d0d9d4;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin: 0 0 0 12px;
+  }
+
+  .form .submit-button {
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .about-me-container {
+    margin-top: 36px;
+    max-height: 100px;
+  }
+
+  .about-me-container h1 {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about-container p {
+    margin: 0 220px 36px 220px;
+  }
+
+  .form .form-text {
+    font-size: 30px;
+    margin-left: 80px;
+    margin-bottom: 150px;
+  }
+
+  .form .form-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 90px;
+  }
+
+  .desktop-toolbar {
+    margin-bottom: 176px;
+  }
+
+  .flex-container p {
+    margin: 0 280px 34px 280px;
+  }
+
+  .about-me-background {
+    background-image: url("../../assets/img/aboutme-bottomleft-desktop.svg");
+    background-position: center left;
+    background-repeat: no-repeat;
+  }
+
+  .about-me-container .topright-desktop {
+    display: block;
+    justify-self: end;
+    position: relative;
+    top: -100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  textarea {
+    width: 658px;
+  }
+
+  .works {
+    grid-template-columns: 369px 369px 369px;
+    grid-gap: 24px;
+    width: 100%;
+  }
+
+  .about-container p {
+    margin: 0 280px 36px 280px;
+  }
+
+  .form .form-text {
+    margin-left: 110px;
+  }
+
+  .form .form-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 135px;
+  }
+
+  .input-full-name .first-name {
+    width: 100%;
+  }
+
+  .input-full-name .last-name {
+    width: 100%;
+  }
 }
