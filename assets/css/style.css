@@ -72,6 +72,10 @@ footer .contact {
   display: flex;
 }
 
+footer .contact-desktop {
+  display: none;
+}
+
 .toolbar {
   display: flex;
   justify-content: space-between;
@@ -128,6 +132,10 @@ header {
   justify-content: center;
   list-style: none;
   margin: 0 0 40px 0;
+}
+
+.flex-container .contact-desktop {
+  display: none;
 }
 
 .flex-container button {
@@ -243,6 +251,7 @@ header {
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .about-container p {
@@ -251,7 +260,9 @@ header {
 
 .categorie-about-myself {
   list-style: none;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin-bottom: 60px;
 }
@@ -312,10 +323,15 @@ header {
   flex-wrap: wrap;
   margin-left: 24px;
   margin-right: 24px;
+  margin-bottom: 225px;
 }
 
 .form .form-text {
   margin-bottom: 58px;
+}
+
+.input-full-name {
+  display: none;
 }
 
 .form .input-name {
@@ -374,6 +390,23 @@ header {
     text-align: center;
   }
 
+  footer {
+    margin-top: 26px;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  footer .contact {
+    display: none;
+  }
+
+  footer .contact-desktop {
+    list-style: none;
+    display: flex;
+  }
+
   .menu {
     display: none;
   }
@@ -424,6 +457,18 @@ header {
     margin: 12px 240px 34px 240px;
   }
 
+  .flex-container .contact {
+    display: none;
+  }
+
+  .flex-container .contact-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin: 0 0 40px 0;
+  }
+
   .works {
     grid-template-columns: 327px 327px;
     grid-gap: 24px;
@@ -439,6 +484,8 @@ header {
     justify-self: end;
     width: 80%;
     height: 80%;
+    position: relative;
+    top: -30px;
   }
 
   .about-me-background {
@@ -450,5 +497,128 @@ header {
 
   .about-container p {
     margin: 0 120px 36px 120px;
+  }
+
+  .categorie-about-myself {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 90px;
+  }
+
+  .card-categories {
+    width: 369px;
+    height: 352px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .form {
+    background-image: url("../../assets/img/img-footer-1.svg"), url("../../assets/img/img-footer-2.svg"), url("../../assets/img/img-footer-3.svg");
+    background-position: bottom left, bottom center, bottom right;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 10%, 10%, 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+
+  .form .form-text {
+    margin: 0 10px 58px 0;
+    font-size: 25px;
+    margin-left: 24px;
+  }
+
+  .form .form-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+  }
+
+  .form .input-name {
+    display: none;
+  }
+
+  .form .input-full-name {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 24px;
+  }
+
+  .input-full-name .first-name {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6b778c;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin: 0 12px 0 0;
+    border: 1px solid #d0d9d4;
+  }
+
+  .input-full-name .last-name {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6b778c;
+    border: 1px solid #d0d9d4;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin: 0 0 0 12px;
+  }
+
+  .form .submit-button {
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .about-me-container {
+    margin-top: 36px;
+    max-height: 100px;
+  }
+
+  .about-me-container h1 {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about-container p {
+    margin: 0 220px 36px 220px;
+  }
+
+  .form {
+    background-size: 20%, 20%, 20%;
+  }
+
+  .form .form-text {
+    margin: 0 10px 58px 0;
+    font-size: 30px;
+    margin-left: 60px;
+  }
+
+  .form .form-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 140px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .works {
+    grid-template-columns: 369px 369px 369px;
+    grid-gap: 24px;
+    width: 100%;
   }
 }
