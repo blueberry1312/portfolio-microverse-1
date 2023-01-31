@@ -76,6 +76,10 @@ footer .contact-desktop {
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .toolbar {
   display: flex;
   justify-content: space-between;
@@ -86,6 +90,37 @@ footer .contact-desktop {
 
 .desktop-toolbar {
   display: none;
+}
+
+.header-nav-mobile.hidden {
+  display: none;
+}
+
+.header-nav-mobile {
+  display: flex;
+  flex-direction: column;
+  margin: 28px;
+  gap: 40px;
+  background-color: #fff;
+  width: 95.85%;
+}
+
+.header-nav-mobile li {
+  list-style: none;
+}
+
+.header-nav-mobile li a,
+.header-nav-mobile li a:visited {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+}
+
+.header-nav-mobile .btn-close-nav {
+  align-self: flex-end;
+  margin-right: 30px;
 }
 
 .logo-placeholder {
