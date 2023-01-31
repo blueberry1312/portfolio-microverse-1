@@ -13,7 +13,7 @@
                     <h3>Welcome</h3>
                 </a>
                 <nav class="menu">
-                    <img src="assets/img/menu.svg" alt="menu link">
+                    <img src="assets/img/menu.svg" alt="menu link" id="hamburger">
                 </nav>
                 <nav class="desktop-toolbar">
                     <li class="desktop-toolbar__li"><a href="#work-title">Portfolio</a></li>
@@ -21,6 +21,15 @@
                     <li class="desktop-toolbar__li"><a href="#form">Contact</a></li>
                 </nav>
             </div>
+            <nav class="header-nav-mobile hidden">                
+                <img src="assets/img/Icon.svg" alt="cancel icon" class="btn-close-nav" width="12px"
+                height="12px">
+                <ul>
+                    <li><a href="#work-title" id="portfolio-mobile">Portfolio</a></li>
+                    <li><a href="#about-myself" id="about-mobile">About</a></li>
+                    <li><a href="#form" id="contact-mobile">Contact</a></li>
+                </ul>
+            </nav>
             <div class="headline">
                 <div class="flex-container">
                     <h1 class="header-title">
@@ -286,5 +295,6 @@
                 nestor.oro.alvarez@gmail.com
             </p>
         </footer>
+        <script src="index.js"></script>
     </body>
 </html>
