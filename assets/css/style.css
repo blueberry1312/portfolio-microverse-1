@@ -76,10 +76,6 @@ footer .contact-desktop {
   display: none;
 }
 
-.hidden {
-  display: none;
-}
-
 .toolbar {
   display: flex;
   justify-content: space-between;
@@ -255,6 +251,48 @@ header {
 
 .card-background .button-project {
   margin: 29px 103px 24px 103px;
+}
+
+.card-work-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 315px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 16px;
+  gap: 12px;
+  position: absolute;
+  margin-left: auto;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.card-work-mobile.hidden {
+  visibility: hidden;
+}
+
+.card-work-mobile .image-detail-mobile {
+  position: relative;
+}
+
+.card-work-mobile .close-detail-mobile {
+  position: absolute;
+  right: 41px;
+  top: 37px;
+}
+
+.card-work-mobile .card-name-mobile {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.card-work-mobile .card-tags {
+  margin-left: 0;
 }
 
 .about-me-background {
