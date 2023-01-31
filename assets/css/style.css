@@ -256,30 +256,25 @@ header {
 .card-work-mobile {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  max-width: 315px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
   gap: 12px;
-  position: absolute;
-  margin-left: auto;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%);
-}
-
-.card-work-mobile.hidden {
-  visibility: hidden;
-}
-
-.card-work-mobile .image-detail-mobile {
-  position: relative;
+  transform: translate(-50%, -50%) scale(1);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
 }
 
 .card-work-mobile .close-detail-mobile {
   position: absolute;
-  right: 41px;
+  right: 38px;
   top: 37px;
 }
 
