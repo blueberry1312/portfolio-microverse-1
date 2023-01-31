@@ -10,9 +10,28 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.add('hidden');
   logoPlaceholder.classList.add('hidden');
   navMobile.classList.remove('hidden');
+  navMobile.style.height = '100vh';
 });
 
 closeBtn.addEventListener('click', () => {
+  hamburger.classList.remove('hidden');
+  logoPlaceholder.classList.remove('hidden');
+  navMobile.classList.add('hidden');
+});
+
+portfolio.addEventListener('click', () => {
+  hamburger.classList.remove('hidden');
+  logoPlaceholder.classList.remove('hidden');
+  navMobile.classList.add('hidden');
+});
+
+about.addEventListener('click', () => {
+  hamburger.classList.remove('hidden');
+  logoPlaceholder.classList.remove('hidden');
+  navMobile.classList.add('hidden');
+});
+
+contact.addEventListener('click', () => {
   hamburger.classList.remove('hidden');
   logoPlaceholder.classList.remove('hidden');
   navMobile.classList.add('hidden');
