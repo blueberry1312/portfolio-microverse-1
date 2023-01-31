@@ -10,7 +10,6 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.add('hidden');
   logoPlaceholder.classList.add('hidden');
   navMobile.classList.remove('hidden');
-  navMobile.style.height = '100vh';
 });
 
 closeBtn.addEventListener('click', () => {
