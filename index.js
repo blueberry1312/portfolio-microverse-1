@@ -5,7 +5,7 @@ const portfolio = document.querySelector('#portfolio-mobile');
 const about = document.querySelector('#about-mobile');
 const contact = document.querySelector('#contact-mobile');
 const closeBtn = document.querySelector('.btn-close-nav');
-const popupBtn = document.querySelector('.button-project');
+const popupBtn = document.querySelectorAll('.button-project');
 const list = document.getElementById('myList');
 
 const popupWindow = [
@@ -119,8 +119,19 @@ contact.addEventListener('click', () => {
   navMobile.classList.add('hidden');
 });
 
+ const cardWork = document.createElement('div');
+
 popupBtn.addEventListener('click', () => {
-  popupWindow.forEach(() => {
-  
-  });
+  projectsWindow(popupWindow);
 });
+
+function projectsWindow(popupWindow) {
+ let img='';
+  for(let i=0; i<popupWindow.length; i++){
+     img += `
+     <img src=${popupWindow[i].featuredImage} alt="snapshot portfolio"> 
+     `
+  }
+cardWork.innerHTML = img;
+}
+
