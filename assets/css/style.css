@@ -257,6 +257,10 @@ header {
   margin: 29px 103px 24px 103px;
 }
 
+.card-work-desktop {
+  display: none;
+}
+
 .card-work-mobile {
   display: flex;
   flex-direction: column;
@@ -266,20 +270,23 @@ header {
   padding: 16px;
   gap: 12px;
   position: fixed;
-  margin: 10px;
-  box-sizing: border-box;
   overflow-y: scroll;
   top: 0;
-  bottom: 0;
-  width: 350px;
   left: 50%;
+  bottom: 0;
+  width: 314px;
   transform: translate(-50%);
 }
 
 .card-work-mobile .close-detail-mobile {
   position: absolute;
-  right: 37px;
+  right: 40px;
   top: 37px;
+}
+
+.card-work-mobile .card-image-details-mobile {
+  width: 311px;
+  height: 220px;
 }
 
 .card-work-mobile .card-name-mobile {
@@ -288,10 +295,15 @@ header {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+  width: 311px;
 }
 
 .card-work-mobile .card-tags {
-  margin-left: 0;
+  margin: 0;
+}
+
+.card-work-mobile .card-description-mobile {
+  width: 311px;
 }
 
 .card-work-mobile .card-button-mobile {
@@ -477,6 +489,22 @@ header {
   margin-top: 24px;
 }
 
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     background-image: url("../../assets/img/background-image-desktop.svg");
@@ -508,7 +536,8 @@ header {
     overflow-y: scroll;
     top: 0;
     bottom: 0;
-    width: 920px;
+    width: 70%;
+    height: 95%;
     left: 50%;
     transform: translate(-50%);
   }
@@ -521,6 +550,7 @@ header {
 
   .card-image-details-desktop {
     padding-top: 40px;
+    width: 100%;
   }
 
   .popup-title-desktop {

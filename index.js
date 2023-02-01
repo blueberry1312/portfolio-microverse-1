@@ -6,6 +6,7 @@ const about = document.querySelector('#about-mobile');
 const contact = document.querySelector('#contact-mobile');
 const closeBtn = document.querySelector('.btn-close-nav');
 const popupBtn = document.querySelectorAll('.button-project');
+const overlay = document.querySelector('#overlay');
 
 const arrayCards = [
   {
@@ -274,34 +275,36 @@ const cardWorkMobile = (items) => `
 
 const cardWorkDesktop = (items1) => `
   <article class="card-work-desktop">
-    <img src="assets/img/Icon.png" alt="close detail desktop" class="close-detail-desktop">
-    <img src=${arrayDesktop[items1].url} alt="details image" class="card-image-details-desktop">
-    <div class="popup-title-desktop">
-    <h2 class="card-name-desktop">${arrayDesktop[items1].name}</h2>
-    <div class="card-button-desktop">
-       <div class="btn-container">
-        <a href=${arrayDesktop[items1].linkVersion} class="livebtn-desktop">
-          See Live
-          <img src="assets/img/liveicon.svg" alt="live icon">
-        </a>
-        </div>
+    <div class="popup" id="popup-desktop">
+      <img src="assets/img/Icon.png" alt="close detail desktop" class="close-detail-desktop">
+      <img src=${arrayDesktop[items1].url} alt="details image" class="card-image-details-desktop">
+      <div class="popup-title-desktop">
+      <h2 class="card-name-desktop">${arrayDesktop[items1].name}</h2>
+      <div class="card-button-desktop">
         <div class="btn-container">
-          <a href=${arrayDesktop[items1].linkSource} class="sourcebtn-desktop">
-            See Source
-            <img src="assets/img/sourceicon.svg" alt="source icon">
+          <a href=${arrayDesktop[items1].linkVersion} class="livebtn-desktop">
+            See Live
+            <img src="assets/img/liveicon.svg" alt="live icon">
           </a>
-        </div>
+          </div>
+          <div class="btn-container">
+            <a href=${arrayDesktop[items1].linkSource} class="sourcebtn-desktop">
+              See Source
+              <img src="assets/img/sourceicon.svg" alt="source icon">
+            </a>
+          </div>
+      </div>
+      </div>
+      <ul class="card-tags">
+        <li>${arrayDesktop[items1].tecnologies.tech1}</li>
+        <li>${arrayDesktop[items1].tecnologies.tech2}</li>
+        <li>${arrayDesktop[items1].tecnologies.tech3}</li>
+        <li>${arrayDesktop[items1].tecnologies.tech4}</li>
+        <li>${arrayDesktop[items1].tecnologies.tech5}</li>
+        <li>${arrayDesktop[items1].tecnologies.tech6}</li>
+      </ul>
+      <p class="card-description-desktop">${arrayDesktop[items1].description}</p>
     </div>
-    </div>
-    <ul class="card-tags">
-      <li>${arrayDesktop[items1].tecnologies.tech1}</li>
-      <li>${arrayDesktop[items1].tecnologies.tech2}</li>
-      <li>${arrayDesktop[items1].tecnologies.tech3}</li>
-      <li>${arrayDesktop[items1].tecnologies.tech4}</li>
-      <li>${arrayDesktop[items1].tecnologies.tech5}</li>
-      <li>${arrayDesktop[items1].tecnologies.tech6}</li>
-    </ul>
-    <p class="card-description-desktop">${arrayDesktop[items1].description}</p>
     <script src="index.js"></script>
   </article>
 `;
@@ -338,11 +341,13 @@ contact.addEventListener('click', () => {
 
 for (let i = 0; i < popupBtn.length; i += 1) {
   popupBtn[i].addEventListener('click', () => {
+    overlay.classList.add('active');
     const cardWork = document.createElement('div');
     cardWork.innerHTML = cardWorkMobile(i);
     document.body.append(cardWork);
     const closeDetail = document.querySelector('.close-detail-mobile');
     closeDetail.addEventListener('click', async () => {
+      overlay.classList.remove('active');
       document.body.removeChild(cardWork);
     });
   });
@@ -350,11 +355,13 @@ for (let i = 0; i < popupBtn.length; i += 1) {
 
 for (let i = 0; i < popupBtn.length; i += 1) {
   popupBtn[i].addEventListener('click', () => {
+    overlay.classList.add('active');
     const cardDesktop = document.createElement('div');
     cardDesktop.innerHTML = cardWorkDesktop(i);
-    document.body.append(cardDesktop);
+    document.body.appendChild(cardDesktop);
     const closeDetail = document.querySelector('.close-detail-desktop');
     closeDetail.addEventListener('click', async () => {
+      overlay.classList.remove('active');
       document.body.removeChild(cardDesktop);
     });
   });
