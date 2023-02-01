@@ -118,6 +118,141 @@ const arrayCards = [
   },
 ];
 
+const arrayDesktop = [
+  {
+    id: 0,
+    url: 'assets/img/Snapshoot-Portfolio.png',
+    name: 'Keeping track of hundreds of components ',
+    linkVersion: '#',
+    linkSource: '#',
+    tecnologies: {
+      tech1: 'codekit',
+      tech2: 'github',
+      tech3: 'JavScript',
+      tech4: 'bootstrap',
+      tech5: 'terminal',
+      tech6: 'codepen',
+    },
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it 1960s with the relea
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+  
+  },
+  {
+    id: 1,
+    url: 'assets/img/Snapshoot-Portfolio.png',
+    name: 'Keeping track of hundreds of components ',
+    linkVersion: '#',
+    linkSource: '#',
+    tecnologies: {
+      tech1: 'codekit',
+      tech2: 'github',
+      tech3: 'JavScript',
+      tech4: 'bootstrap',
+      tech5: 'terminal',
+      tech6: 'codepen',
+    },
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it 1960s with the relea
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+  
+  },
+  {
+    id: 2,
+    url: 'assets/img/Snapshoot-Portfolio.png',
+    name: 'Keeping track of hundreds of components ',
+    linkVersion: '#',
+    linkSource: '#',
+    tecnologies: {
+      tech1: 'codekit',
+      tech2: 'github',
+      tech3: 'JavScript',
+      tech4: 'bootstrap',
+      tech5: 'terminal',
+      tech6: 'codepen',
+    },
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it 1960s with the relea
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+  
+  },
+  {
+    id: 3,
+    url: 'assets/img/Snapshoot-Portfolio.png',
+    name: 'Keeping track of hundreds of components ',
+    linkVersion: '#',
+    linkSource: '#',
+    tecnologies: {
+      tech1: 'codekit',
+      tech2: 'github',
+      tech3: 'JavScript',
+      tech4: 'bootstrap',
+      tech5: 'terminal',
+      tech6: 'codepen',
+    },
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it 1960s with the relea
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+  
+  },
+  {
+    id: 4,
+    url: 'assets/img/Snapshoot-Portfolio.png',
+    name: 'Keeping track of hundreds of components ',
+    linkVersion: '#',
+    linkSource: '#',
+    tecnologies: {
+      tech1: 'codekit',
+      tech2: 'github',
+      tech3: 'JavScript',
+      tech4: 'bootstrap',
+      tech5: 'terminal',
+      tech6: 'codepen',
+    },
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it 1960s with the relea
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+  
+  },
+  {
+    id: 5,
+    url: 'assets/img/Snapshoot-Portfolio.png',
+    name: 'Keeping track of hundreds of components ',
+    linkVersion: '#',
+    linkSource: '#',
+    tecnologies: {
+      tech1: 'codekit',
+      tech2: 'github',
+      tech3: 'JavScript',
+      tech4: 'bootstrap',
+      tech5: 'terminal',
+      tech6: 'codepen',
+    },
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it 1960s with the relea
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+  
+  },
+];
+
 const cardWorkMobile = (items) => `
   <article class="card-work-mobile">
     <img src="assets/img/closedetailbtn.svg" alt="close detail mobile" class="close-detail-mobile">
@@ -139,6 +274,40 @@ const cardWorkMobile = (items) => `
         <img src="assets/img/sourceicon.svg" alt="source icon">
       </a>
     </div>
+    <script src="index.js"></script>
+  </article>
+`;
+
+const cardWorkDesktop = (items1) => `
+  <article class="card-work-desktop">
+    <img src="assets/img/Icon.png" alt="close detail desktop" class="close-detail-desktop">
+    <img src=${arrayDesktop[items1].url} alt="details image" class="card-image-details-desktop">
+    <div class="popup-title-desktop">
+    <h2 class="card-name-desktop">${arrayDesktop[items1].name}</h2>
+    <div class="card-button-desktop">
+       <div class="btn-container">
+        <a href=${arrayDesktop[items1].linkVersion} class="livebtn-desktop">
+          See Live
+          <img src="assets/img/liveicon.svg" alt="live icon">
+        </a>
+        </div>
+        <div class="btn-container">
+          <a href=${arrayDesktop[items1].linkSource} class="sourcebtn-desktop">
+            See Source
+            <img src="assets/img/sourceicon.svg" alt="source icon">
+          </a>
+        </div>
+    </div>
+    </div>
+    <ul class="card-tags">
+      <li>${arrayDesktop[items1].tecnologies.tech1}</li>
+      <li>${arrayDesktop[items1].tecnologies.tech2}</li>
+      <li>${arrayDesktop[items1].tecnologies.tech3}</li>
+      <li>${arrayDesktop[items1].tecnologies.tech4}</li>
+      <li>${arrayDesktop[items1].tecnologies.tech5}</li>
+      <li>${arrayDesktop[items1].tecnologies.tech6}</li>
+    </ul>
+    <p class="card-description-desktop">${arrayDesktop[items1].description}</p>
     <script src="index.js"></script>
   </article>
 `;
@@ -181,6 +350,18 @@ for (let i = 0; i < popupBtn.length; i++) {
     const closeDetail = document.querySelector('.close-detail-mobile');
     closeDetail.addEventListener('click', async () => {
       document.body.removeChild(cardWork);
+    });
+  });
+}
+
+for (let i = 0; i < popupBtn.length; i++) {
+  popupBtn[i].addEventListener('click', () => {
+    const cardDesktop = document.createElement('div');
+    cardDesktop.innerHTML = cardWorkDesktop(i);
+    document.body.append(cardDesktop);
+    const closeDetail = document.querySelector('.close-detail-desktop');
+    closeDetail.addEventListener('click', async () => {
+      document.body.removeChild(cardDesktop);
     });
   });
 }
