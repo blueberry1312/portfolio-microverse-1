@@ -276,6 +276,7 @@ header {
   bottom: 0;
   width: 314px;
   transform: translate(-50%);
+  margin: 20px 16px 20px 0;
 }
 
 .card-work-mobile .close-detail-mobile {
@@ -531,13 +532,13 @@ header {
     padding: 16px;
     gap: 12px;
     position: fixed;
-    margin: 10px;
+    margin-top: 100px;
     box-sizing: border-box;
     overflow-y: scroll;
     top: 0;
     bottom: 0;
     width: 70%;
-    height: 95%;
+    height: 85%;
     left: 50%;
     transform: translate(-50%);
   }
