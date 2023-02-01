@@ -92,6 +92,10 @@ footer .contact-desktop {
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .header-nav-mobile {
   display: flex;
   flex-direction: column;
