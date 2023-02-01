@@ -336,7 +336,7 @@ contact.addEventListener('click', () => {
   navMobile.classList.add('hidden');
 });
 
-for (let i = 0; i < popupBtn.length; i++) {
+for (let i = 0; i < popupBtn.length; i += 1) {
   popupBtn[i].addEventListener('click', () => {
     const cardWork = document.createElement('div');
     cardWork.innerHTML = cardWorkMobile(i);
@@ -348,7 +348,7 @@ for (let i = 0; i < popupBtn.length; i++) {
   });
 }
 
-for (let i = 0; i < popupBtn.length; i++) {
+for (let i = 0; i < popupBtn.length; i += 1) {
   popupBtn[i].addEventListener('click', () => {
     const cardDesktop = document.createElement('div');
     cardDesktop.innerHTML = cardWorkDesktop(i);
