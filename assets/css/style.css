@@ -256,25 +256,25 @@ header {
 .card-work-mobile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
   gap: 12px;
   position: fixed;
-  top: 50%;
+  margin: 10px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  width: 350px;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  height: 100%;
-  width: 100%;
-  z-index: 2;
+  transform: translate(-50%);
 }
 
 .card-work-mobile .close-detail-mobile {
   position: absolute;
-  right: 38px;
+  right: 37px;
   top: 37px;
 }
 
@@ -288,6 +288,29 @@ header {
 
 .card-work-mobile .card-tags {
   margin-left: 0;
+}
+
+.card-work-mobile .card-button-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-work-mobile .livebtn-mobile,
+.card-work-mobile .sourcebtn-mobile {
+  align-items: center;
+  text-align: center;
+  background-color: #36b37f;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  color: #fff;
+  padding: 12px;
+  gap: 10px;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  text-decoration: none;
 }
 
 .about-me-background {

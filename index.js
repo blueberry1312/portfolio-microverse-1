@@ -121,9 +121,7 @@ const arrayCards = [
 const cardWorkMobile = (items) => `
   <article class="card-work-mobile">
     <img src="assets/img/closedetailbtn.svg" alt="close detail mobile" class="close-detail-mobile">
-    <div class="card-image-details-mobile">
-      <img src=${arrayCards[items].url} alt="details image">
-    </div>
+    <img src=${arrayCards[items].url} alt="details image" class="card-image-details-mobile">
     <h2 class="card-name-mobile">${arrayCards[items].name}</h2>
     <ul class="card-tags">
       <li>${arrayCards[items].tecnologies.tech1}</li>
@@ -134,11 +132,11 @@ const cardWorkMobile = (items) => `
     <div class="card-button-mobile">
       <a href=${arrayCards[items].linkVersion} class="livebtn-mobile">
         See Live
-        <img src="assets/img/liveicon.svg">
+        <img src="assets/img/liveicon.svg" alt="live icon">
       </a>
       <a href=${arrayCards[items].linkSource} class="sourcebtn-mobile">
         See Source
-        <img src="assets/img/sourceicon.svg">
+        <img src="assets/img/sourceicon.svg" alt="source icon">
       </a>
     </div>
     <script src="index.js"></script>
@@ -179,7 +177,7 @@ for (let i = 0; i < popupBtn.length; i++) {
   popupBtn[i].addEventListener('click', () => {
     const cardWork = document.createElement('div');
     cardWork.innerHTML = cardWorkMobile(i);
-    document.body.appendChild(cardWork);
+    document.body.append(cardWork);
     const closeDetail = document.querySelector('.close-detail-mobile');
     closeDetail.addEventListener('click', async () => {
       document.body.removeChild(cardWork);
