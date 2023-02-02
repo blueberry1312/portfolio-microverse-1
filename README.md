@@ -19,6 +19,9 @@
   - [Usage](#usage)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
 
@@ -33,8 +36,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[section_welcome_mobile]** Welcome header mobile version.
-- **[section_works]** Display last works.
+- **[Popup_windows]** Display popup windows with javascript.
+- **[menu_mobile]** Hamburger button display menu mobile.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,8 +85,13 @@ To run the project, you need to open "index.html" file.
 
 - GitHub: [@blueberry1312](https://github.com/blueberry1312)
 - Twitter: [@nestorsitooo](https://twitter.com/nestorsitooo)
-- LinkedIn: [LinkedIn]
-(https://www.linkedin.com/in/nes-oro-658570225/)
+- LinkedIn: [LinkedIn] (https://www.linkedin.com/in/nes-oro-658570225/)
+
+👤 **Muhammad Davlatov**
+
+- GitHub: [Muhammad0602](https://github.com/Muhammad0602)
+- Twitter: [Muhammad Davlatov](https://twitter.com/MuhammadDavla20)
+- LinkedIn: [Muhammad Davlatov](https://www.linkedin.com/in/muhammad-davlatov-6a8536254/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -92,10 +100,34 @@ To run the project, you need to open "index.html" file.
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[menu_mobile]** Hamburguer menu for mobile.
-- [ ] **[display_works]** Display works details.
+- [ ] **[validate_form]** Using javascript to validate contact form with rules.
+- [ ] **[local_storage]** Preserves data in the browser.
 
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show your support <a name="support"></a>
+
+
+If you like this project follow me in github, and support it in a way you wish.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+
+I would like to thank everyone who helped me to finish this project, without whom it would be very difficult.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
