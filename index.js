@@ -7,6 +7,13 @@ const contact = document.querySelector('#contact-mobile');
 const closeBtn = document.querySelector('.btn-close-nav');
 const popupBtn = document.querySelectorAll('.button-project');
 const overlay = document.querySelector('#overlay');
+const form = document.querySelector('.form-input');
+const email = form.elements['email'];
+const errMsgEmail = document.querySelector('small');
+const submitBtn = document.querySelector('.submit-button');
+const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|
+(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
 
 const arrayCards = [
   {
