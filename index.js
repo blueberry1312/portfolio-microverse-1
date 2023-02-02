@@ -221,7 +221,7 @@ submitBtn.addEventListener('click', (e) => {
     errMsgEmail.innerText = '';
   } else {
     errMsgEmail.innerText = 'Your email should be in lowercase!';
-    errMsgEmail.classList.add('error');
+    errMsgEmail.classList.add('error-message');
     e.preventDefault();
   }
 });

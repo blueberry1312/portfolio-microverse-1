@@ -512,6 +512,14 @@ header {
   padding: 12px;
 }
 
+.error-message {
+  color: red;
+  margin-top: 10px;
+  text-align: left;
+  display: block;
+  width: 515px;
+}
+
 .form .submit-button {
   margin-top: 24px;
 }
