@@ -9,7 +9,7 @@ const popupBtn = document.querySelectorAll('.button-project');
 const overlay = document.querySelector('#overlay');
 const errMsgEmail = document.querySelector('small');
 const form = document.querySelector('.form-input');
-const [fullName, firstName, lastName, email] = form.elements;
+const [fullName, firstName, lastName, email, textArea] = form.elements;
 const re = /[A-Z]/;
 const mediaqueryList = window.matchMedia('(max-width: 768px)');
 
@@ -26,6 +26,58 @@ const screenTest = (e) => {
 };
 
 screenTest(mediaqueryList);
+
+let inputDataStorage = {};
+
+fullName.addEventListener('change', () => {
+  inputDataStorage.fullName = fullName.value;
+});
+
+firstName.addEventListener('change', () => {
+  inputDataStorage.firstName = firstName.value;
+});
+
+lastName.addEventListener('change', () => {
+  inputDataStorage.lastName = lastName.value;
+});
+
+email.addEventListener('change', () => {
+  inputDataStorage.email = email.value;
+});
+
+textArea.addEventListener('change', () => {
+  inputDataStorage.textArea = textArea.value;
+});
+
+const fillDataInput = () => {
+  if (inputDataStorage.fullName) {
+    fullName.value = inputDataStorage.fullName;
+  }
+  if (inputDataStorage.firstName) {
+    firstName.value = inputDataStorage.firstName;
+  }
+  if (inputDataStorage.lastName) {
+    lastName.value = inputDataStorage.lastName;
+  }
+  if (inputDataStorage.email) {
+    email.value = inputDataStorage.email;
+  }
+  if (inputDataStorage.textArea) {
+    textArea.value = inputDataStorage.textArea;
+  }
+};
+
+const populateFields = () => {
+  localStorage.setItem('savedForm', JSON.stringify(inputDataStorage));
+  fillDataInput();
+};
+
+if (localStorage.savedForm) {
+  inputDataStorage = JSON.parse(localStorage.getItem('savedForm'));
+}
+
+populateFields();
+form.onchange = populateFields;
 
 const arrayCards = [
   {
