@@ -27,6 +27,42 @@ const screenTest = (e) => {
 
 screenTest(mediaqueryList);
 
+let inputDataStorage = {};
+
+fullName.addEventListener('change', () => {
+  inputDataStorage.fullName = fullName.value;
+});
+
+firstName.addEventListener('change', () => {
+  inputDataStorage.firstName = firstName.value;
+});
+
+lastName.addEventListener('change', () => {
+  inputDataStorage.lastName = lastName.value;
+});
+
+email.addEventListener('change', () => {
+  inputDataStorage.email = email.value;
+});
+
+const fillDataInput = () => {
+  if (inputDataStorage.fullName) {
+    fullName.value = inputDataStorage.fullName;
+  }
+  if (inputDataStorage.firstName) {
+    firstName.value = inputDataStorage.firstName;
+  }
+  if (inputDataStorage.lastName) {
+    lastName.value = inputDataStorage.lastName;
+  }
+  if (inputDataStorage.email) {
+    email.value = inputDataStorage.email;
+  }
+};
+
+populateFields();
+form.onchange = populateFields;
+
 const arrayCards = [
   {
     id: 0,
