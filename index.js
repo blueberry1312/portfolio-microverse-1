@@ -7,6 +7,25 @@ const contact = document.querySelector('#contact-mobile');
 const closeBtn = document.querySelector('.btn-close-nav');
 const popupBtn = document.querySelectorAll('.button-project');
 const overlay = document.querySelector('#overlay');
+const errMsgEmail = document.querySelector('small');
+const form = document.querySelector('.form-input');
+const [fullName, firstName, lastName, email] = form.elements;
+const re = /[A-Z]/;
+const mediaqueryList = window.matchMedia('(max-width: 768px)');
+
+const screenTest = (e) => {
+  if (e.matches) {
+    fullName.required = true;
+    firstName.required = false;
+    lastName.required = false;
+  } else {
+    fullName.removeAttribute('required');
+    firstName.required = true;
+    lastName.required = true;
+  }
+};
+
+screenTest(mediaqueryList);
 
 const arrayCards = [
   {
@@ -209,6 +228,16 @@ contact.addEventListener('click', () => {
   hamburger.classList.remove('hidden');
   logoPlaceholder.classList.remove('hidden');
   navMobile.classList.add('hidden');
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (!re.test(email.value)) {
+    form.submit();
+  } else {
+    errMsgEmail.innerText = 'Your email should be in lowercase!';
+    errMsgEmail.classList.add('error-message');
+  }
 });
 
 for (let i = 0; i < popupBtn.length; i += 1) {
