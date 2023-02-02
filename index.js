@@ -11,118 +11,8 @@ const overlay = document.querySelector('#overlay');
 const arrayCards = [
   {
     id: 0,
-    url: 'assets/img/Snapshoot.svg',
-    name: 'Keeping track of hundreds of components ',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-    tecnologies: {
-      tech1: 'Ruby on rails',
-      tech2: 'css',
-      tech3: 'JavScript',
-    },
-    linkVersion: '#',
-    linkSource: '#',
-  },
-  {
-    id: 1,
-    url: 'assets/img/Snapshoot.svg',
-    name: 'Keeping track of hundreds of components ',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-    tecnologies: {
-      tech1: 'Ruby on rails',
-      tech2: 'css',
-      tech3: 'JavScript',
-    },
-    linkVersion: '#',
-    linkSource: '#',
-  },
-  {
-    id: 2,
-    url: 'assets/img/Snapshoot.svg',
-    name: 'Keeping track of hundreds of components ',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-    tecnologies: {
-      tech1: 'Ruby on rails',
-      tech2: 'css',
-      tech3: 'JavScript',
-    },
-    linkVersion: '#',
-    linkSource: '#',
-  },
-  {
-    id: 3,
-    url: 'assets/img/Snapshoot.svg',
-    name: 'Keeping track of hundreds of components ',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-    tecnologies: {
-      tech1: 'Ruby on rails',
-      tech2: 'css',
-      tech3: 'JavScript',
-    },
-    linkVersion: '#',
-    linkSource: '#',
-  },
-  {
-    id: 4,
-    url: 'assets/img/Snapshoot.svg',
-    name: 'Keeping track of hundreds of components ',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-    tecnologies: {
-      tech1: 'Ruby on rails',
-      tech2: 'css',
-      tech3: 'JavScript',
-    },
-    linkVersion: '#',
-    linkSource: '#',
-  },
-  {
-    id: 5,
-    url: 'assets/img/Snapshoot.svg',
-    name: 'Keeping track of hundreds of components ',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-    tecnologies: {
-      tech1: 'Ruby on rails',
-      tech2: 'css',
-      tech3: 'JavScript',
-    },
-    linkVersion: '#',
-    linkSource: '#',
-  },
-];
-
-const arrayDesktop = [
-  {
-    id: 0,
     url: 'assets/img/Snapshoot-Portfolio.png',
+    url2: 'assets/img/Snapshoot.svg',
     name: 'Keeping track of hundreds of components ',
     linkVersion: '#',
     linkSource: '#',
@@ -144,6 +34,7 @@ const arrayDesktop = [
   {
     id: 1,
     url: 'assets/img/Snapshoot-Portfolio.png',
+    url2: 'assets/img/Snapshoot.svg',
     name: 'Keeping track of hundreds of components ',
     linkVersion: '#',
     linkSource: '#',
@@ -165,6 +56,7 @@ const arrayDesktop = [
   {
     id: 2,
     url: 'assets/img/Snapshoot-Portfolio.png',
+    url2: 'assets/img/Snapshoot.svg',
     name: 'Keeping track of hundreds of components ',
     linkVersion: '#',
     linkSource: '#',
@@ -186,6 +78,7 @@ const arrayDesktop = [
   {
     id: 3,
     url: 'assets/img/Snapshoot-Portfolio.png',
+    url2: 'assets/img/Snapshoot.svg',
     name: 'Keeping track of hundreds of components ',
     linkVersion: '#',
     linkSource: '#',
@@ -207,6 +100,7 @@ const arrayDesktop = [
   {
     id: 4,
     url: 'assets/img/Snapshoot-Portfolio.png',
+    url2: 'assets/img/Snapshoot.svg',
     name: 'Keeping track of hundreds of components ',
     linkVersion: '#',
     linkSource: '#',
@@ -228,6 +122,7 @@ const arrayDesktop = [
   {
     id: 5,
     url: 'assets/img/Snapshoot-Portfolio.png',
+    url2: 'assets/img/Snapshoot.svg',
     name: 'Keeping track of hundreds of components ',
     linkVersion: '#',
     linkSource: '#',
@@ -250,13 +145,26 @@ const arrayDesktop = [
 
 const cardWorkMobile = (items) => `
   <article class="card-work-mobile">
-    <img src="assets/img/closedetailbtn.svg" alt="close detail mobile" class="close-detail-mobile">
-    <img src=${arrayCards[items].url} alt="details image" class="card-image-details-mobile">
+    <div class="close-detail" id="close-detail-mobile">
+      <img src="assets/img/closedetailbtn.svg" alt="closebtn mobile">
+    </div>
+    <div  class="close-detail" id="close-detail-desktop">
+      <img src="assets/img/Icon.png" alt="closebtn desktop">
+    </div>
+    <div id="card-image-details-mobile">
+      <img src=${arrayCards[items].url2} alt="details image mobile">
+    </div>
+    <div id="card-image-details-desktop">
+      <img src=${arrayCards[items].url} alt="details image desktop">
+    </div>
     <h2 class="card-name-mobile">${arrayCards[items].name}</h2>
-    <ul class="card-tags">
-      <li>${arrayCards[items].tecnologies.tech1}</li>
-      <li>${arrayCards[items].tecnologies.tech2}</li>
-      <li>${arrayCards[items].tecnologies.tech3}</li>
+    <ul class="card-tags-tech">
+      <li id="tech1">${arrayCards[items].tecnologies.tech1}</li>
+      <li id="tech2">${arrayCards[items].tecnologies.tech2}</li>
+      <li id="tech3">${arrayCards[items].tecnologies.tech3}</li>
+      <li id="tech4">${arrayCards[items].tecnologies.tech4}</li>
+      <li id="tech5">${arrayCards[items].tecnologies.tech5}</li>
+      <li id="tech6">${arrayCards[items].tecnologies.tech6}</li>
     </ul>
     <p class="card-description-mobile">${arrayCards[items].description}</p>
     <div class="card-button-mobile">
@@ -268,42 +176,6 @@ const cardWorkMobile = (items) => `
         See Source
         <img src="assets/img/sourceicon.svg" alt="source icon">
       </a>
-    </div>
-    <script src="index.js"></script>
-  </article>
-`;
-
-const cardWorkDesktop = (items1) => `
-  <article class="card-work-desktop">
-    <div class="popup" id="popup-desktop">
-      <img src="assets/img/Icon.png" alt="close detail desktop" class="close-detail-desktop">
-      <img src=${arrayDesktop[items1].url} alt="details image" class="card-image-details-desktop">
-      <div class="popup-title-desktop">
-      <h2 class="card-name-desktop">${arrayDesktop[items1].name}</h2>
-      <div class="card-button-desktop">
-        <div class="btn-container">
-          <a href=${arrayDesktop[items1].linkVersion} class="livebtn-desktop">
-            See Live
-            <img src="assets/img/liveicon.svg" alt="live icon">
-          </a>
-          </div>
-          <div class="btn-container">
-            <a href=${arrayDesktop[items1].linkSource} class="sourcebtn-desktop">
-              See Source
-              <img src="assets/img/sourceicon.svg" alt="source icon">
-            </a>
-          </div>
-      </div>
-      </div>
-      <ul class="card-tags">
-        <li>${arrayDesktop[items1].tecnologies.tech1}</li>
-        <li>${arrayDesktop[items1].tecnologies.tech2}</li>
-        <li>${arrayDesktop[items1].tecnologies.tech3}</li>
-        <li>${arrayDesktop[items1].tecnologies.tech4}</li>
-        <li>${arrayDesktop[items1].tecnologies.tech5}</li>
-        <li>${arrayDesktop[items1].tecnologies.tech6}</li>
-      </ul>
-      <p class="card-description-desktop">${arrayDesktop[items1].description}</p>
     </div>
     <script src="index.js"></script>
   </article>
@@ -345,24 +217,12 @@ for (let i = 0; i < popupBtn.length; i += 1) {
     const cardWork = document.createElement('div');
     cardWork.innerHTML = cardWorkMobile(i);
     document.body.append(cardWork);
-    const closeDetail = document.querySelector('.close-detail-mobile');
-    closeDetail.addEventListener('click', async () => {
-      overlay.classList.remove('active');
-      document.body.removeChild(cardWork);
-    });
-  });
-}
-
-for (let i = 0; i < popupBtn.length; i += 1) {
-  popupBtn[i].addEventListener('click', () => {
-    overlay.classList.add('active');
-    const cardDesktop = document.createElement('div');
-    cardDesktop.innerHTML = cardWorkDesktop(i);
-    document.body.appendChild(cardDesktop);
-    const closeDetail = document.querySelector('.close-detail-desktop');
-    closeDetail.addEventListener('click', async () => {
-      overlay.classList.remove('active');
-      document.body.removeChild(cardDesktop);
-    });
+    const closeDetail = document.querySelectorAll('.close-detail');
+    for (let j = 0; j < closeDetail.length; j += 1) {
+      closeDetail[j].addEventListener('click', async () => {
+        overlay.classList.remove('active');
+        document.body.removeChild(cardWork);
+      });
+    }
   });
 }
