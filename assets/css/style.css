@@ -457,9 +457,7 @@ header {
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
-  align-items: center;
   flex-wrap: wrap;
   margin-left: 24px;
   margin-right: 24px;
@@ -491,6 +489,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 12px;
+  width: 100%;
 }
 
 .form .input-email {
@@ -510,6 +509,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 12px;
+  width: 100%;
 }
 
 .error-message {
@@ -517,7 +517,6 @@ header {
   margin-top: 10px;
   text-align: left;
   display: block;
-  width: 515px;
 }
 
 .form .submit-button {

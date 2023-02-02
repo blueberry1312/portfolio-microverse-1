@@ -7,10 +7,25 @@ const contact = document.querySelector('#contact-mobile');
 const closeBtn = document.querySelector('.btn-close-nav');
 const popupBtn = document.querySelectorAll('.button-project');
 const overlay = document.querySelector('#overlay');
-const email = document.getElementById('email');
 const errMsgEmail = document.querySelector('small');
-const submitBtn = document.querySelector('.submit-button');
-const re = /^[a-z0-9]+([._%+-][a-z0-9]+)*@[a-z0-9]+([.-][a-z0-9]+)*\.[a-z]{2,}$/;
+const form = document.querySelector('.form-input');
+const [fullName, firstName, lastName, email] = form.elements;
+const re = /[A-Z]/;
+const mediaqueryList = window.matchMedia('(max-width: 768px)');
+
+const screenTest = (e) => {
+  if (e.matches) {
+    fullName.required = true;
+    firstName.required = false;
+    lastName.required = false;
+  } else {
+    fullName.removeAttribute('required');
+    firstName.required = true;
+    lastName.required = true;
+  }
+};
+
+screenTest(mediaqueryList);
 
 const arrayCards = [
   {
@@ -215,13 +230,13 @@ contact.addEventListener('click', () => {
   navMobile.classList.add('hidden');
 });
 
-submitBtn.addEventListener('click', (e) => {
-  if (re.test(email.value) && email.value === email.value.toLowerCase()) {
-    errMsgEmail.innerText = '';
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (!re.test(email.value)) {
+    form.submit();
   } else {
     errMsgEmail.innerText = 'Your email should be in lowercase!';
     errMsgEmail.classList.add('error-message');
-    e.preventDefault();
   }
 });
 
