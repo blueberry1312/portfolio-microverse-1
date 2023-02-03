@@ -13,15 +13,15 @@ const [fullName, firstName, lastName, email, textArea] = form.elements;
 const re = /[A-Z]/;
 const mediaqueryList = window.matchMedia('(max-width: 768px)');
 
-const screenTest = (e) => {
-  if (e.matches) {
-    fullName.required = true;
-    firstName.required = false;
-    lastName.required = false;
+const screenTest = (i) => {
+  if (i.matches) {
+    fullName.setAttribute('required', '');
+    firstName.removeAttribute('required');
+    lastName.removeAttribute('required');
   } else {
     fullName.removeAttribute('required');
-    firstName.required = true;
-    lastName.required = true;
+    firstName.setAttribute('required', '');
+    lastName.setAttribute('required', '');
   }
 };
 
